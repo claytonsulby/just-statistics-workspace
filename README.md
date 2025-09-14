@@ -6,16 +6,18 @@ This is an AI enabled workspace for Matlab, LaTex, and Statistics.
 
 Follow the setup below to be able to do the following:
 
-- Summarize PDF documents using Github Copilot
+- Act like a Matlab Tutor
 - Generate LaTex from prompts
 - Run Matlab files from prompts
 
 ## How To Use This
 
-Read PDFs using Github Copilot:
+Study from PDFs with Copilot (limitation + workflow):
 
-- Put textbooks and pdfs in `docs/pdfs`.
-- Prompt Copilot as normal. It will use the PDF Reader MCP server to pull data.
+- Copilot Chat cannot open or read your local PDFs directly.
+- Put textbooks and PDFs in `docs/pdfs` as references.
+- When you mention a PDF, Copilot will use the filename to infer the title, find a public table of contents online, map your topic to likely chapters, and point you to relevant concepts and sources. It won’t quote the PDF itself.
+- See `.github/instructions/pdf.instructions.md` for the exact workflow Copilot follows.
 
 Generate Matlab or LaTex files
 
