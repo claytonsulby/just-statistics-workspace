@@ -1,0 +1,6 @@
+# Other
+.DS_Store
+*.log
+
+.github
+.vscode

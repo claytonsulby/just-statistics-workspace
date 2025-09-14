@@ -1,0 +1,95 @@
+{
+  // AI
+  "chat.agent.maxRequests": 99999,
+  "chat.tools.terminal.autoApprove": {
+    "pnpm exec tsc --noEmit": true,
+    "pnpm exec tsc --noEmit --pretty false": true,
+    "pnpm lint": true,
+    "pnpm build": true,
+    "pnpm test": true,
+    "rm": false,
+    "rm -f": false,
+    "rm -rf": false,
+    "rm rimraf": false,
+    "rmdir": false,
+    "del": false,
+    "kill": false,
+    "curl": false,
+    "wget": false,
+    "eval": false,
+    "chmod": false,
+    "chown": false,
+    "/^Remove-Item\\b/i": false
+  },
+
+  // Put in ~/.vscode
+  "chat.tools.autoApprove": true,
+
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.advanced": {},
+
+  // Web
+  "playwright.reuseBrowser": false,
+
+  // Formatter
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // Editor
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.unicodeHighlight.allowedCharacters": {
+    //Fix for Medium.com style em-dash
+    "–": true
+  },
+
+  // Language-specific Editor
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // ESLint (enable flat config + TS validation + workspace ESLint)
+  "eslint.enable": true,
+  "eslint.useFlatConfig": true,
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  // Optional: show fixes on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "json.schemas": [
+    {
+      "fileMatch": ["**/hexagons/**/hexagon.json"],
+      "url": "./lib/hexagons/.schema/hexagon.schema.json"
+    }
+  ],
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[feature]": {
+    "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
+  },
+  "[story]": {
+    "editor.defaultFormatter": "vscode.markdown-language-features"
+  }
+}

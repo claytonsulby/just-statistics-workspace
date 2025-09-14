@@ -1,0 +1,44 @@
+{
+	"servers": {
+		"sequentialthinking": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-sequential-thinking"
+			],
+			"type": "stdio"
+		},
+		"memory": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-memory"
+			],
+			"env": {
+				"MEMORY_FILE_PATH": "${input:memory_file_path}"
+			},
+			"type": "stdio"
+		},
+		"github": {
+			"url": "https://api.githubcopilot.com/mcp/",
+			"type": "http"
+		},
+		"Exa Search": {
+			"type": "http",
+			"url": "https://server.smithery.ai/exa/mcp?api_key=1c006c06-56f7-481e-9ef2-d9ac57d84d4c&profile=big-grasshopper-NwROnG"
+		},
+		"PDF Tools": {
+			"type": "http",
+			"url": "https://server.smithery.ai/@danielkennedy1/pdf-tools-mcp/mcp?api_key=1c006c06-56f7-481e-9ef2-d9ac57d84d4c"
+		}
+	},
+	"inputs": [
+		{
+			"id": "memory_file_path",
+			"type": "promptString",
+			"description": "Path to the memory storage file (optional)",
+			"password": false
+		}
+	]
+
+}

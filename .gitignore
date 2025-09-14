@@ -1,0 +1,35 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# macOS
+.DS_Store
+
+# symlinks
+**/*@
+ 
+# PDFs and large docs
+docs/pdfs/*.pdf
+docs/pdfs/*.PDF
+
+# MATLAB generated files
+**/*.asv
+**/*.m~
+**/*.mex*
+**/*.mat
+**/*.fig
+**/*.slxc
+**/*.slx
+**/*.mdl
+**/*_autosave.*
+
+# LaTeX build artifacts
+**/*.aux
+**/*.bbl
+**/*.bcf
+**/*.blg
+**/*.fdb_latexmk
+**/*.fls
+**/*.log
+**/*.out
+**/*.run.xml
+**/*.synctex.gz
+**/*.toc
