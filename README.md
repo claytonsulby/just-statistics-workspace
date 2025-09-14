@@ -1,6 +1,32 @@
 # MATLAB / Statistics / LaTex Workspace
 
-## Setup: Git, VS Code, and GitHub Copilot
+This is an AI enabled workspace for Matlab, LaTex, and Statistics.
+
+## What Is This?
+
+Follow the setup below to be able to do the following:
+
+- Summarize PDF documents using Github Copilot
+- Generate LaTex from prompts
+- Run Matlab files from prompts
+
+## How To Use This
+
+Read PDFs using Github Copilot:
+
+- Put textbooks and pdfs in `docs/pdfs`.
+- Prompt Copilot as normal. It will use the PDF Reader MCP server to pull data.
+
+Generate Matlab or LaTex files
+
+- Switch the Github Copilot Chatmode from Agent/Ask/Edit to Matlab or LaTex
+- Prompt Copilot as normal. It will use the instructions in `.github` to generate the respective files
+
+## Setup
+
+There is no quickstart because there are a few things to setup
+
+### Setup: Git, VS Code, and GitHub Copilot
 
 1. Install Git (macOS)
 
@@ -60,7 +86,7 @@ Set up the VSCode Copilot Settings:
 - Move `"chat.tools.autoApprove": true` from your workspace settings in `./.vscode/settings.json` to your user settings in `~/.vscode/settings.json`
 - Move `mcp.json` from your workspace vscode folder in `./.vscode` to your user vscode folder in `~/.vscode`
 
-## Set Up LaTex
+### Set Up LaTex
 
 1. Install LaTex
 
@@ -74,7 +100,7 @@ kpsewhich article.cls
 
 2. Install the VSCode Extension
 
-## Set Up Matlab
+### Set Up Matlab
 
 1. install matlab: https://www.mathworks.com/products/get-matlab.html
 2. install the matlab vscode extension
